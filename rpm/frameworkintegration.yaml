@@ -1,5 +1,5 @@
-Name         : kf5-frameworkintegration
-Version      : 5.0.0
+Name         : frameworkintegration
+Version      : 5.1.0
 Release      : 1
 Group        : System/Base
 License      : LGPLv2+
@@ -27,13 +27,13 @@ Builder      : none
 PkgBR:
     - kf5-rpm-macros
     - extra-cmake-modules
-    - kf5-kconfig-devel
-    - kf5-kconfigwidgets-devel
-    - kf5-ki18n-devel
-    - kf5-kiconthemes-devel
-    - kf5-kio-devel
-    - kf5-knotifications-devel
-    - kf5-kwidgetsaddons-devel
+    - kconfig-devel
+    - kconfigwidgets-devel
+    - ki18n-devel
+    - kiconthemes-devel
+    - kio-devel
+    - knotifications-devel
+    - kwidgetsaddons-devel
     - oxygen-fonts-devel
 PkgConfigBR:
     - Qt5Core
@@ -57,9 +57,8 @@ RequiresPostUn:
 Files:
     - "%doc COPYING.LIB README.md"
     - "%{_kf5_libdir}/libKF5Style.so.*"
-    - "%{_kf5_datadir}/kf5/infopage/*"
-    - "%{_kf5_qtplugindir}/kf5/FrameworkIntegrationPlugin.so"
-    - "%{_kf5_qtplugindir}/platformthemes/KDEPlatformTheme.so"
+    - "%{_kf5_datadir}/infopage/*"
+    - "%{_kf5_plugindir}/*"
 
 SubPackages:
     - Name: devel
@@ -72,4 +71,4 @@ SubPackages:
           - "%{_kf5_includedir}/frameworkintegration_version.h"
           - "%{_kf5_includedir}/KStyle"
           - "%{_kf5_libdir}/libKF5Style.so"
-          - "%{_kf5_libdir}/cmake/KF5FrameworkIntegration"
+          - "%{_kf5_cmakedir}/KF5FrameworkIntegration"
