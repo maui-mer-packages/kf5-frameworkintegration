@@ -95,6 +95,7 @@ rm -rf %{buildroot}
 %{_kf5_libdir}/libKF5Style.so.*
 %{_kf5_datadir}/infopage/*
 %{_kf5_plugindir}/*
+%{_kf5_sharedir}/knotifications5/*
 # >> files
 # << files
 
