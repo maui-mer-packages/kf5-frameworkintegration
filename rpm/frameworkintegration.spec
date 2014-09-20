@@ -8,12 +8,6 @@ Name:       frameworkintegration
 # >> macros
 # << macros
 
-# >> bcond_with
-# << bcond_with
-
-# >> bcond_without
-# << bcond_without
-
 Summary:    KDE Frameworks 5 Tier 4 addon with framework integration
 Version:    5.2.0
 Release:    1
@@ -58,6 +52,8 @@ Applications do not need to link to this directly.
 Summary:    Development files for %{name}
 Group:      Development/Libraries
 Requires:   %{name} = %{version}-%{release}
+Requires:   kconfigwidgets-devel
+Requires:   kiconthemes-devel
 
 %description devel
 The %{name}-devel package contains the files necessary to develop applications
