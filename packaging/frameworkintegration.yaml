@@ -10,7 +10,6 @@ Description  : |
 
   Applications do not need to link to this directly.
 URL          : http://www.kde.org
-SetupOptions : -q -n %{name}-%{version}/upstream
 
 Sources:
     - "%{name}-%{version}.tar.xz"
